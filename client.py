@@ -114,7 +114,7 @@ class Client():
         self.port = int(port)
         self.connection.connect((self.ip, self.port))
 
-    def login(self):
+    def authorization(self):
         """
         perform operation login (OP_LOGIN)
         """
@@ -221,7 +221,7 @@ def main():
     filepath = parser.path
     logging.info("begin to transfer")
     client = Client(server_ip, server_port)
-    client.login()
+    client.authorization()
     client.upload(filepath)
 
 
