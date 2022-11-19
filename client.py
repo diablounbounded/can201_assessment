@@ -24,7 +24,7 @@ def _argparse():
     parse.add_argument("-port", default=1379, action='store', required=False, dest="port",
                        help="The port that server listen on. Default is 1379.")
     parse.add_argument("-id", default=2035965, action='store', required=False, dest="id",
-                       help="id")
+                       help="id is the student ID number")
     parse.add_argument("-f", action='store', required=False, dest="path",
                        help="input the path of file")
     return parse.parse_args()
