@@ -23,7 +23,7 @@ def _argparse():
                        help="server ip")
     parse.add_argument("-port", default=1379, action='store', required=False, dest="port",
                        help="The port that server listen on. Default is 1379.")
-    parse.add_argument("-id", default=1379, action='store', required=False, dest="id",
+    parse.add_argument("-id", default=2035965, action='store', required=False, dest="id",
                        help="id")
     parse.add_argument("-f", action='store', required=False, dest="path",
                        help="input the path of file")
@@ -119,7 +119,7 @@ class Client():
         perform operation login (OP_LOGIN)
         """
         login_data = {
-            FIELD_USERNAME: "first"
+            FIELD_USERNAME: "2035965"
         }
         # generate password
         login_data[FIELD_PASSWORD] = str(hashlib.md5(
